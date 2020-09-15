@@ -12,7 +12,7 @@ const paths = {
   src: {
     styles: "src/scss/**/*.scss",
     scripts: "src/js/**/*.js",
-    images: "src/img/*.+(jpeg|png|svg|jpg|gif)"
+    images: "src/img/*.+(jpeg|png|svg|jpg|gif|pdf)"
   },
   dist: {
     styles: "dist/css",
