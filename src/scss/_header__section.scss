@@ -1,6 +1,5 @@
 .wrapper {
   min-width: 320px;
-
 }
 
 .header__section {
@@ -10,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: grey;
-  opacity: 1;
+  opacity: 0.9;
   width: 100%;
   height: 80px;
 }
@@ -25,6 +24,7 @@
   height: 76px;
   border-radius: 50%;
   vertical-align: middle;
+  border: 1px solid black;
 }
 
 .header__menu-button {
@@ -88,10 +88,12 @@
 
 .header__section-logo-text {
   margin-left: 5px;
-  color: white;
+  color: black;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 20px;
+  padding: 5px;
+  border: 1px solid black;
 }
 
 .header__section-logo-link:hover .header__section-logo-img, {
@@ -126,14 +128,14 @@
 }
 
 .header__section-menu-link a {
-  color: white;
+  color: black;
 }
 
 .header__section-menu-link a:hover {
   color: red;
   border-bottom: 1px solid red;
-  font-size: 22px;
-  margin-left: 10px;
+  font-size: 20px;
+  margin-left: 20px;
 }
 
 .header__section-contacts {
@@ -152,65 +154,89 @@
   }
   .header__section-menu-link {
     font-size: 15px;
-    padding: 10px;
+    padding: 5px;
     margin: 0;
+    box-sizing: border-box;
   }
+  .header__section-menu-link:nth-child(5):after{
+    border-right:none;
+  }
+  .header__section-menu-link:after {
+    content: "";
+    margin-left: 20px;
+    border-right: 2px solid black;
+  }
+
   .header__section-menu-link a:hover {
     color: red;
     border-bottom: 1px solid red;
-    font-size: 17px;
+    font-size: 15px;
+    margin-left: 0;
   }
 
 }
-
 
 @media (min-width: 993px) {
   .header__section-menu {
     display: flex;
   }
-  .header__section-menu-link {
-    font-size: 15px;
-    padding: 10px;
-    margin: 0;
+  .header__section-logo-text {
+    font-size: 30px;
   }
+  .header__section-menu-link {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+  }
+
   .header__section-menu-link a:hover {
     color: red;
     border-bottom: 1px solid red;
-    font-size: 17px;
+    font-size: 18px;
+    margin-left: 0;
   }
   .header__menu-button {
     display: none;
   }
 
   .header__section-contacts {
-    display: block;
+    display: flex;
+    align-items: center;
   }
   .phone__logo {
-    color: white;
-    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
   }
 
   .facebook__logo,
   .instagram__logo {
-    padding: 10px;
+    padding: 5px;
   }
 
   .fa-phone-square-alt,
   .fa-facebook-square,
   .fa-instagram {
-    font-size: 16px;
+    font-size: 20px;
     color: white;
   }
 
   .phone__logo:hover {
-    border-bottom: 1px solid red;
+    color: red;
   }
 
   .fa-phone-square-alt:hover,
   .fa-facebook-square:hover,
   .fa-instagram:hover {
     color: red;
-    border: none;
-    font-size: 15px;
+  }
+  .header__section-menu-link:nth-child(5):after{
+    border-right:none;
+  }
+  .header__section-menu-link:after {
+    content: "";
+    margin-left: 10px;
+    border-right: 2px solid black;
+    margin-right: 10px;
   }
 }
