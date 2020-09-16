@@ -116,6 +116,7 @@
   left: 99px;
   width: calc(100% - 100px);
   background: #333;
+  opacity: 0.9;
   box-shadow: 0 0 20px 7px #000;
   border-radius: 10px;
 }
@@ -158,8 +159,8 @@
     margin: 0;
     box-sizing: border-box;
   }
-  .header__section-menu-link:nth-child(5):after{
-    border-right:none;
+  .header__section-menu-link:nth-child(5):after {
+    border-right: none;
   }
   .header__section-menu-link:after {
     content: "";
@@ -230,8 +231,8 @@
   .fa-instagram:hover {
     color: red;
   }
-  .header__section-menu-link:nth-child(5):after{
-    border-right:none;
+  .header__section-menu-link:nth-child(5):after {
+    border-right: none;
   }
   .header__section-menu-link:after {
     content: "";
