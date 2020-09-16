@@ -1,0 +1,57 @@
+.footer{
+
+  &__section{
+    background-color: black;
+    padding: 15px 20px;
+
+
+    &-contacts-info{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 150px;
+
+      &__location{
+        color: white;
+        cursor: pointer;
+        & i{
+          color: red;
+        }
+      }
+      &__phone{
+        color: white;
+        & i{
+          color: red;
+        }
+      }
+      &__schedule{
+        color: white;
+        & i{
+          color: red;
+        }
+      }
+      &__social-links{
+        text-align: center;
+        font-size: 25px ;
+        & i {
+          color: red;
+        }
+
+      }
+    }
+
+    &-map{
+
+      justify-content: center;
+      #mapid { height: 250px; width: 100% }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 992px) {
+
+}
+
+@media (min-width: 993px) {
+
+}
