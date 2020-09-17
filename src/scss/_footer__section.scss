@@ -4,7 +4,13 @@
     background-color: black;
     padding: 15px 20px;
 
-
+    &-contacts-logo{
+      background-image: url("../img/logo-tadam.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 100px;
+      height: 100px;
+    }
     &-contacts-info{
       display: flex;
       flex-direction: column;
