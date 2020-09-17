@@ -8,20 +8,12 @@ button.addEventListener('click', (ev) => {
 });
 
 let swiper = new Swiper('.swiper-container', {
-  spaceBetween: 30,
   effect: 'fade',
   loop: true,
-  speed: 10000,
+  runCallbacksOnInit:true,
+  speed: 5000,
   autoplay: {
-    delay: 5,
+    delay: 1000,
     disableOnInteraction: false,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
   }
 });
