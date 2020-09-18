@@ -1,19 +1,54 @@
-.aboutUS__section.author__block-photo{
-  min-height: 50px;
+.aboutUS__section {
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+.aboutUS__section.author__block-photo {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  height: 400px;
+}
+.aboutUS__section.description__text{
+  font-size: 12px;
+  padding: 0 20px;
+}
+.aboutUS__section.author__block-text{
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.aboutUS__section.description__title{
+  font-weight: bold;
   padding: 10px;
 }
 
-.aboutUS__section{
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  padding: 0 10px;
-  box-sizing:border-box;
+@media (min-width: 481px) and (max-width: 992px){
 
+  .aboutUS__section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutUS__section.description,
+  .aboutUS__section.author__block {
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+  .aboutUS__section.description__text{
+    font-size: 14px;
+    padding: 0 20px;
+  }
+  .aboutUS__section.author__block-photo {
+    max-width: 300px;
+    max-height: 550px;
+  }
 }
 
-@media (min-width: 481px){
+@media (min-width: 992px) {
   .aboutUS__section {
     display: flex;
     width: 100%;
@@ -22,18 +57,19 @@
   }
 
   .aboutUS__section.description,
-  .aboutUS__section.author__block{
+  .aboutUS__section.author__block {
     flex-direction: column;
     justify-content: center;
     width: 50%;
     font-size: 22px;
     letter-spacing: 2px;
-
-
   }
-  .aboutUS__section.author__block-photo{
-    padding: 50px 0 10px 0;
-    height: 500px;
-    width: 400px;
+  .aboutUS__section.description__text{
+    font-size: 22px;
+    padding: 0 20px;
+  }
+  .aboutUS__section.author__block-photo {
+    width: 500px;
+   height: 750px;
   }
 }
