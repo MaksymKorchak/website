@@ -19,11 +19,10 @@
 }
 
 .header__section-logo-img {
-  width: 70px;
-  height: 68px;
-  border-radius: 50%;
-  vertical-align: middle;
-  border: 1px solid black;
+  width: 45px;
+  height: 70px;
+  display: block;
+
 }
 
 .header__menu-button {
@@ -94,11 +93,6 @@
   padding: 5px;
   border: 1px solid black;
 }
-
-.header__section-logo-link:hover .header__section-logo-img, {
-  border: 1px solid red;
-  box-shadow: 0 0 22px -5px red;
-};
 
 
 .header__section-logo-link:hover .header__section-logo-text {
