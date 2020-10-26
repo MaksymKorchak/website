@@ -1,11 +1,10 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  @import "reset";
+  @import "header__section";
+  @import "slides__section";
+  @import "aboutUS__section";
+  @import "brands__section";
+  @import "services__section";
+  @import "footer__section";
 }
-
-@import "reset";
-@import "header__section";
-@import "slides__section";
-@import "aboutUS__section";
-@import "brands__section";
-@import "services__section";
-@import "footer__section";
