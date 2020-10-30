@@ -1,7 +1,7 @@
 .footer{
 
   &__section{
-    background-color: black;
+    background-color: rgb(211,210,210);
     padding: 15px 20px;
 
     &-contacts-logo{
@@ -18,29 +18,29 @@
       height: 150px;
 
       &__location{
-        color: white;
+        color: rgb(32,22,0);
         cursor: pointer;
         & i{
-          color: red;
+          color: rgb(210,74,67);
         }
       }
       &__phone{
-        color: white;
+        color: rgb(32,22,0);
         & i{
-          color: red;
+          color: rgb(210,74,67);
         }
       }
       &__schedule{
-        color: white;
+        color: rgb(32,22,0);
         & i{
-          color: red;
+          color: rgb(210,74,67);
         }
       }
       &__social-links{
         text-align: center;
         font-size: 25px ;
         & i {
-          color: red;
+          color: rgb(210,74,67);
         }
 
       }
