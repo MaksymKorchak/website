@@ -1,5 +1,5 @@
 const gulp = require('gulp'),
-  autoPreFixer = require('gulp-autoprefixer'),
+  autoprefixer = require('gulp-autoprefixer'),
   clean = require('gulp-clean'),
   cleanCSS = require('gulp-clean-css'),
   imageMin = require('gulp-imagemin'),
@@ -12,18 +12,19 @@ const paths = {
   src: {
     styles: "src/scss/**/*.scss",
     scripts: "src/js/**/*.js",
-    images: "src/img/*.+(jpeg|png|svg|jpg|gif|pdf)"
+    images: "src/img/*.+(jpeg|png|svg|jpg|gif)",
+    html: 'src/index.html',
   },
   dist: {
     styles: "dist/css",
     scripts: "dist/js",
     images: "dist/img",
-    html: "dist/"
+    root: 'dist',
   }
 }
 
 const cleanDist = () => (
-  gulp.src(paths.dist.html, {allowEmpty: true})
+  gulp.src(paths.dist.root, {allowEmpty: true})
     .pipe(clean())
 )
 gulp.task('cleanDist', cleanDist);
@@ -39,7 +40,7 @@ gulp.task('buildJS', buildJS);
 const buildCSS = () => (
   gulp.src(paths.src.styles)
     .pipe(sass().on('error', sass.logError))
-    .pipe(autoPreFixer({
+    .pipe(autoprefixer({
       browsers: ['> 0.5%', 'last 2 versions', 'Firefox ESR', 'Opera 12.1'],
       cascade: false
     }))
@@ -56,25 +57,31 @@ const buildImages = () => (
 )
 gulp.task('buildImages', buildImages)
 
-const runDev = () => {
-  browserSync.init({
-    server: {
-      baseDir: "./"
-    }
-  });
+const buildHtml = () => (
+  gulp.src(paths.src.html)
+    .pipe(gulp.dest(paths.dist.root))
+);
+
+const serve = () => {
+  gulp.watch(paths.src.html, buildHtml).on('change', browserSync.reload);
   gulp.watch(paths.src.styles, buildCSS).on('change', browserSync.reload);
   gulp.watch(paths.src.scripts, buildJS).on('change', browserSync.reload);
-}
 
-gulp.task('build', gulp.series(
+  return browserSync.init({
+    server: {
+      baseDir: paths.dist.root
+    },
+    files: [
+      {match: paths.dist.root, fn: this.reload}
+    ]
+  })
+};
+
+gulp.task('serve', gulp.series(
   cleanDist,
+  buildHtml,
   buildCSS,
   buildJS,
-  buildImages
-));
-
-gulp.task('dev', gulp.series(
-  buildCSS,
-  buildJS,
-  runDev
+  buildImages,
+  serve
 ));
