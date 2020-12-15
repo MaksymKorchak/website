@@ -13,7 +13,7 @@ let swiper = new Swiper('.swiper-container', {
   runCallbacksOnInit:true,
   speed: 5000,
   autoplay: {
-    delay: 1000,
+    delay: 5000,
     disableOnInteraction: false,
   }
 });
