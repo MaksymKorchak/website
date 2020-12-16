@@ -1,7 +1,9 @@
 .wrapper {
   min-width: 320px;
 }
-
+.slides__section{
+  height:70vh;
+}
 .header__section {
   box-sizing: border-box;
   padding: 0 20px;
@@ -12,8 +14,7 @@
   width: 100%;
   height: 70px;
   box-shadow: 2px 2px 10px #f2f2f2;
-margin-bottom: 10px;
-
+  margin-bottom: 10px;
 }
 
 .header__section-logo-link {
@@ -25,7 +26,6 @@ margin-bottom: 10px;
   width: 45px;
   height: 70px;
   display: block;
-
 }
 
 .header__menu-button {
@@ -47,7 +47,7 @@ margin-bottom: 10px;
     top: calc(50% - 1px);
     left: calc(50% - 13px);
     transition: all 0.3s;
-    background: rgb(32,22,0);
+    background: rgb(32, 22, 0);
     border-radius: 5px;
   }
 
@@ -71,7 +71,7 @@ margin-bottom: 10px;
 }
 
 .header__menu-button.active .header__menu-button-lines::before {
-  background: rgb(210,74,67);
+  background: rgb(210, 74, 67);
   top: 0;
   transition: all 0.2s;
   transform: rotate(45deg);
@@ -80,16 +80,15 @@ margin-bottom: 10px;
 }
 
 .header__menu-button.active .header__menu-button-lines::after {
-  background: rgb(210,74,67);
+  background: rgb(210, 74, 67);
   top: 0;
   transition: all 0.2s;
   transform: rotate(-45deg);
 }
 
-
 .header__section-logo-text {
   margin-left: 5px;
-  color: rgb(32,22,0);
+  color: rgb(32, 22, 0);
   text-transform: uppercase;
   font-weight: bold;
   font-size: 30px;
@@ -99,7 +98,7 @@ margin-bottom: 10px;
 
 .header__section-logo-link:hover .header__section-logo-text {
   margin-left: 4px;
-  color: rgb(210,74,67);
+  color: rgb(210, 74, 67);
 }
 
 .header__section-menu {
@@ -126,12 +125,12 @@ margin-bottom: 10px;
 }
 
 .header__section-menu-link a {
-  color: rgb(32,22,0);
+  color: rgb(32, 22, 0);
 }
 
 .header__section-menu-link a:hover {
-  color: rgb(210,74,67);
-  border-bottom: 1px solid rgb(210,74,67);
+  color: rgb(210, 74, 67);
+  border-bottom: 1px solid rgb(210, 74, 67);
   font-size: 20px;
   margin-left: 20px;
 }
@@ -162,12 +161,12 @@ margin-bottom: 10px;
   .header__section-menu-link:after {
     content: "";
     margin-left: 20px;
-    border-right: 2px solid rgb(32,22,0);
+    border-right: 2px solid rgb(32, 22, 0);
   }
 
   .header__section-menu-link a:hover {
-    color: rgb(210,74,67);
-    border-bottom: 1px solid rgb(210,74,67);
+    color: rgb(210, 74, 67);
+    border-bottom: 1px solid rgb(210, 74, 67);
     font-size: 15px;
     margin-left: 0;
   }
@@ -188,8 +187,8 @@ margin-bottom: 10px;
   }
 
   .header__section-menu-link a:hover {
-    color: rgb(210,74,67);
-    border-bottom: 1px solid rgb(210,74,67);
+    color: rgb(210, 74, 67);
+    border-bottom: 1px solid rgb(210, 74, 67);
     font-size: 18px;
     margin-left: 0;
   }
@@ -202,7 +201,7 @@ margin-bottom: 10px;
     align-items: center;
   }
   .phone__logo {
-    color: rgb(32,22,0);
+    color: rgb(32, 22, 0);
     font-weight: bold;
     font-size: 20px;
   }
@@ -212,29 +211,38 @@ margin-bottom: 10px;
     padding: 5px;
   }
 
-  .fa-phone-square-alt,
-  .fa-facebook-square,
+  .fa-phone-square-alt {
+    font-size: 20px;
+    color: rgb(11, 252, 3);
+
+  }
+  .fa-facebook-square {
+    font-size: 20px;
+    color: rgb(3, 157, 252);
+
+  }
   .fa-instagram {
     font-size: 20px;
-    color: rgb(32,22,0);
+    color:rgb(233, 66, 245);
   }
 
   .phone__logo:hover {
-    color: rgb(210,74,67);
+    color: rgb(210, 74, 67);
   }
 
   .fa-phone-square-alt:hover,
   .fa-facebook-square:hover,
   .fa-instagram:hover {
-    color: rgb(210,74,67);
+    color: rgb(210, 74, 67);
   }
+
   .header__section-menu-link:nth-child(5):after {
     border-right: none;
   }
   .header__section-menu-link:after {
     content: "";
     margin-left: 10px;
-    border-right: 2px solid rgb(32,22,0);
+    border-right: 2px solid rgb(32, 22, 0);
     margin-right: 10px;
   }
 }
