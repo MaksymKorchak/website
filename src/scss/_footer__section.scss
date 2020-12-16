@@ -1,15 +1,17 @@
 .footer{
-
   &__section{
-    background-color: rgb(211,210,210);
+    background-color: #f2f2f2;
     padding: 15px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     &-contacts-logo{
       background-image: url("../img/logo-tadam.png");
       background-size: contain;
       background-repeat: no-repeat;
-      width: 100px;
-      height: 100px;
+      width: 150px;
+      height: 150px;
     }
     &-contacts-info{
       display: flex;
@@ -37,19 +39,27 @@
         }
       }
       &__social-links{
+        align-self: center;
         text-align: center;
         font-size: 25px ;
         & i {
           color: rgb(210,74,67);
+          font-size: 30px ;
+        }
+        & .fa-instagram{
+          color:rgb(255,132,0);
+        }
+        & .fa-facebook-square{
+          color: rgb(3, 157, 252);
         }
 
       }
     }
 
     &-map{
-
+    box-shadow: 3px 3px 10px 2px #000000;
       justify-content: center;
-      #mapid { height: 250px; width: 100% }
+      #mapid { height: 350px; width: 350px }
     }
   }
 }
