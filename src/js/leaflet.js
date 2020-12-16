@@ -1,4 +1,6 @@
-var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+var mymap = L.map('mapid').setView([50.523492,30.7925641], 13);
+var marker = L.marker([50.523343, 30.795116]).addTo(mymap);
+marker.bindPopup("<b>Привет!</b><br>Ждем тебя тут.").openPopup();
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
 
     maxZoom: 18,
