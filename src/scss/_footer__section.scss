@@ -1,4 +1,5 @@
 .footer{
+
   &__section{
     background-color: #f2f2f2;
     padding: 15px 20px;
@@ -57,7 +58,7 @@
     }
 
     &-map{
-    box-shadow: 3px 3px 10px 2px #000000;
+    //box-shadow: 3px 3px 10px 2px #000000;
       justify-content: center;
       #mapid { height: 350px; width: 350px }
     }
