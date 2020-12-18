@@ -1,7 +1,7 @@
 .footer{
-
   &__section{
-    background-color: #f2f2f2;
+    margin-top: 20px;
+    background-color: #333333;
     padding: 15px 20px;
     display: flex;
     flex-wrap: wrap;
@@ -21,20 +21,20 @@
       height: 150px;
 
       &__location{
-        color: rgb(32,22,0);
+        color:    #f2f2f2;;
         cursor: pointer;
         & i{
           color: rgb(210,74,67);
         }
       }
       &__phone{
-        color: rgb(32,22,0);
+        color:    #f2f2f2;;
         & i{
           color: rgb(11, 252, 3);
         }
       }
       &__schedule{
-        color: rgb(32,22,0);
+        color:    #f2f2f2;;
         & i{
           color: rgb(210,74,67);
         }
@@ -58,9 +58,9 @@
     }
 
     &-map{
-    //box-shadow: 3px 3px 10px 2px #000000;
+    box-shadow: 3px 3px 10px 2px #000000;
       justify-content: center;
-      #mapid { height: 350px; width: 350px }
+      #mapid { height: 350px; min-width: 350px}
     }
   }
 }
@@ -70,5 +70,13 @@
 }
 
 @media (min-width: 993px) {
+.footer__section {
+  background: #333333;
+  display: flex;
+  justify-content: space-around;
 
+  &-map{
+    #mapid { height: 350px;width:40vw}
+  }
+}
 }
