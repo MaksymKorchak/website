@@ -7,17 +7,6 @@ button.addEventListener('click', (ev) => {
   menu.classList.toggle('mobile');
 });
 
-// let swiper = new Swiper('.swiper-container', {
-//   effect: 'fade',
-//   loop: true,
-//   runCallbacksOnInit:true,
-//   speed: 5000,
-//   autoplay: {
-//     delay: 5000,
-//     disableOnInteraction: false,
-//   }
-// });
-
 let galleryThumbs = new Swiper('.gallery-thumbs', {
   spaceBetween: 10,
   slidesPerView: 5,
