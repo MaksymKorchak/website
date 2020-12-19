@@ -2,7 +2,7 @@
   min-width: 320px;
 }
 .slides__section{
-  height:70vh;
+  height:80vh;
 }
 .header__section {
   box-sizing: border-box;
@@ -155,7 +155,7 @@
     margin: 0;
     box-sizing: border-box;
   }
-  .header__section-menu-link:nth-child(5):after {
+  .header__section-menu-link:nth-child(4):after {
     border-right: none;
   }
   .header__section-menu-link:after {
@@ -236,7 +236,7 @@
     color: rgb(210, 74, 67);
   }
 
-  .header__section-menu-link:nth-child(5):after {
+  .header__section-menu-link:nth-child(3):after {
     border-right: none;
   }
   .header__section-menu-link:after {

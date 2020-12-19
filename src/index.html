@@ -29,10 +29,10 @@
             </a>
         </div>
         <menu class="header__section-menu">
-            <li class="header__section-menu-link"><a href="#">Услуги</a></li>
-            <li class="header__section-menu-link"><a href="#">Галерея</a></li>
             <li class="header__section-menu-link"><a href="#aboutUs">О нас</a></li>
-            <li class="header__section-menu-link"><a href="#">Контакты</a></li>
+            <li class="header__section-menu-link"><a href="#services">Услуги</a></li>
+<!--            <li class="header__section-menu-link"><a href="#">Галерея</a></li>-->
+            <li class="header__section-menu-link"><a href="#contacts">Контакты</a></li>
         </menu>
         <button class="header__menu-button">
             <span class="header__menu-button-lines"></span>
@@ -51,7 +51,52 @@
         </div>
     </header>
     <section class="slides__section">
-        <div class="swiper-container">
+<!--        <div class="swiper-container">-->
+<!--            <div class="swiper-wrapper">-->
+<!--                <div class="swiper-slide"-->
+<!--                     style="background-image: url('img/slide1.jpg')">-->
+<!--                </div>-->
+<!--                <div class="swiper-slide"-->
+<!--                     style="background-image: url('img/slide2.jpg')">-->
+<!--                </div>-->
+<!--                <div class="swiper-slide"-->
+<!--                     style="background-image: url('img/slide4.jpg')">-->
+<!--                </div>-->
+<!--                <div class="swiper-slide"-->
+<!--                     style="background-image: url('img/slide5.jpg')">-->
+<!--                </div>-->
+<!--                <div class="swiper-slide"-->
+<!--                     style="background-image: url('img/slide6.jpg')">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="swiper-button-next"></div>-->
+<!--            <div class="swiper-button-prev"></div>-->
+<!--            &lt;!&ndash; Add Pagination &ndash;&gt;-->
+<!--            <div class="swiper-pagination"></div>-->
+<!--        </div>-->
+        <div class="swiper-container gallery-top">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"
+                     style="background-image: url('img/slide1.jpg')">
+                </div>
+                <div class="swiper-slide"
+                     style="background-image: url('img/slide2.jpg')">
+                </div>
+                <div class="swiper-slide"
+                     style="background-image: url('img/slide4.jpg')">
+                </div>
+                <div class="swiper-slide"
+                     style="background-image: url('img/slide5.jpg')">
+                </div>
+                <div class="swiper-slide"
+                     style="background-image: url('img/slide6.jpg')">
+                </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+        </div>
+        <div class="swiper-container gallery-thumbs">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"
                      style="background-image: url('img/slide1.jpg')">
@@ -70,6 +115,7 @@
                 </div>
             </div>
         </div>
+
     </section>
     <section class="aboutUS__section" id="aboutUs">
         <div class="aboutUS__section description">
@@ -97,7 +143,7 @@
     <section class="brands__section">
 
     </section>
-    <section class="services__section-wrapper">
+    <section class="services__section-wrapper" id="services">
         <h2 class="services__section-title">Наши Услуги</h2>
         <div class="services__section">
 
@@ -129,7 +175,7 @@
 
     </section>
     <footer class="footer__section">
-        <div class="footer__section-contacts">
+        <div class="footer__section-contacts" id="contacts">
             <div class="footer__section-contacts-logo"></div>
             <div class="footer__section-contacts-info">
                 <a href="https://www.google.com.ua/maps/place/%D1%83%D0%BB.+%D0%A1%D0%B8%D0%BC%D0%BE%D0%BD%D0%B0+%D0%9F%D0%B5%D1%82%D0%BB%D1%8E%D1%80%D1%8B,+21%D0%92,+%D0%91%D1%80%D0%BE%D0%B2%D0%B0%D1%80%D1%8B,+%D0%9A%D0%B8%D0%B5%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+07400/@50.5234954,30.7925641,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4d90b57ec7801:0x774e13e2ed3029aa!8m2!3d50.523492!4d30.7947528"
