@@ -1,0 +1,25 @@
+.scrollup {
+  position: fixed;
+  bottom: 80px;
+  right: 40px;
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  background: rgb(210, 74, 67);
+  color: #444;
+  cursor: pointer;
+  border-radius: 2px;
+  display: none;
+  box-shadow: 0 0 12px 1px #000;
+}
+
+.scrollup:hover .fa-chevron-up {
+  color: #e9ebec;
+}
+
+.scrollup-show {
+  display: block;
+}
