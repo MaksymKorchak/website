@@ -7,6 +7,26 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    &-title {
+      padding-top: 20px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+      color: #333;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    &-separate-line {
+      height: 2px;
+      width: 50px;
+      border: none;
+      background-color: rgb(210, 74, 67);
+      display: block;
+      margin: 20px auto;
+      box-shadow: 6px 6px rgb(210, 74, 67);
+    }
+
     &-contacts-logo{
       background-image: url("../img/logo-tadam.png");
       background-size: contain;

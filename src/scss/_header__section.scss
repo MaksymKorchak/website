@@ -161,6 +161,10 @@
     padding: 5px;
     margin: 0;
     box-sizing: border-box;
+
+    & a {
+      color: #333;
+    }
   }
   .header__section-menu-link:nth-child(3):after {
     border-right: none;

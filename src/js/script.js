@@ -7,6 +7,13 @@ button.addEventListener('click', (ev) => {
   menu.classList.toggle('mobile');
 });
 
+window.addEventListener("resize", function() {
+  if (innerWidth === 483){
+    menu.classList.remove('mobile');
+    button.classList.remove('active');
+  }
+}, false);
+
 let galleryThumbs = new Swiper('.gallery-thumbs', {
   spaceBetween: 10,
   slidesPerView: 5,
