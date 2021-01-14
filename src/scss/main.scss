@@ -1,5 +1,5 @@
 body {
-  font-family: 'Langar', cursive;
+  font-family: 'Roboto', sans-serif;
   @import "reset";
   @import "header__section";
   @import "slides__section";
@@ -7,4 +7,5 @@ body {
   @import "brands__section";
   @import "services__section";
   @import "footer__section";
+  @import "scrollUp";
 }

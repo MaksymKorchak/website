@@ -11,16 +11,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&family=Montserrat:wght@400;700&display=swap"
           rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,500&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
           integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
           crossorigin=""/>
     <link rel="stylesheet" href="css/styles.min.css">
-    <link rel="shortcut icon" type="img/ico" href="img/favicon.ico"/>
+    <link rel="shortcut icon" type="img/ico" href="img/favicon.png"/>
 </head>
 <body>
 <div class="wrapper">
+    <a class="scrollup" title="up"><i class="fa fa-chevron-up"></i></a>
     <header class="header__section">
         <div class="header__section-logo">
             <a href="#" class="header__section-logo-link">
@@ -31,7 +36,6 @@
         <menu class="header__section-menu">
             <li class="header__section-menu-link"><a href="#aboutUs">О нас</a></li>
             <li class="header__section-menu-link"><a href="#services">Услуги</a></li>
-<!--            <li class="header__section-menu-link"><a href="#">Галерея</a></li>-->
             <li class="header__section-menu-link"><a href="#contacts">Контакты</a></li>
         </menu>
         <button class="header__menu-button">
@@ -46,7 +50,7 @@
                 <i class="fab fa-facebook-square"></i>
             </a>
             <a href="https://www.instagram.com/tadam_studio_/?hl=ru" class="instagram__logo" target="_blank">
-                <i class="fab fa-instagram"></i>
+                <i class="fab fa-instagram-square"></i>
             </a>
         </div>
     </header>
@@ -67,6 +71,12 @@
                 </div>
                 <div class="swiper-slide"
                      style="background-image: url('img/slide6.jpg')">
+                </div>
+                <div class="swiper-slide"
+                     style="background-image: url('img/slide7.jpg')">
+                </div>
+                <div class="swiper-slide"
+                     style="background-image: url('img/slide8.jpg')">
                 </div>
             </div>
             <div class="swiper-button-next swiper-button-white"></div>
@@ -89,19 +99,26 @@
                 <div class="swiper-slide"
                      style="background-image: url('img/slide6.jpg')">
                 </div>
+                <div class="swiper-slide"
+                     style="background-image: url('img/slide7.jpg')">
+                </div>
+                <div class="swiper-slide"
+                     style="background-image: url('img/slide8.jpg')">
+                </div>
             </div>
         </div>
-
     </section>
     <section class="aboutUS__section" id="aboutUs">
         <div class="aboutUS__section description">
             <h2 class="aboutUS__section description__title">О нас</h2>
+            <div class="separate-line"></div>
             <p class="aboutUS__section description__text">
                 Салон красоты – это место, в котором любая женщина может перевоплотиться, стать еще привлекательнее,
                 подчеркнуть свою естественную красоту,
                 значительно улучшить состояние кожи, волос, ногтей. И результат визита напрямую зависит от уровня
                 специалистов, которые работают в салоне.
-                <br>Tadam – это не просто еще одна парикмахерская или салон красоты в г. Бровары. Это место, где
+                <br>
+                Tadam – это не просто еще одна парикмахерская или салон красоты в г. Бровары. Это место, где
                 работают
                 дипломированные мастера,
                 профессионалы с многолетним опытом работы, которые постоянно улучшают свои навыки с помощью
@@ -121,32 +138,100 @@
     </section>
     <section class="services__section-wrapper" id="services">
         <h2 class="services__section-title">Наши Услуги</h2>
+        <div class="services__separate-line"></div>
         <div class="services__section">
-
             <div class="services__section-type podology">
-                <p class="type-name">Подология</p>
+                <div class="services__section-inner">
+                    <p class="type-name">Подология</p>
+                    <div class="open-services-list-button tab-btn " data-tab-name="tab-1"><i class="fas fa-chevron-down"></i></div>
+                    <ul class="services-item-container tab  tab-1">
+                        <li class="services-item-header">&#8226 медицинский педикюр</li>
+                        <li class="services-item-header">&#8226 работа с вросшим ногтем, трещинами, диабетстопой</li>
+                        <li class="services-item-header">&#8226 удаление бородавок и мозолей</li>
+                        <li class="services-item-header">&#8226 установка коррекционных систем</li>
+                        <li class="services-item">- титановая нить, скобы, пластины</li>
+                        <li class="services-item-header"> &#8226 тампонады, разгрузочные повязки</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="services__section-type nails-service">
-                <p class="type-name">Ногтевой Сервис</p>
+                <div class="services__section-inner">
+                    <p class="type-name">Ногтевой Сервис</p>
+                    <div class="open-services-list-button tab-btn" data-tab-name="tab-2"><i class="fas fa-chevron-down"></i></div>
+                    <ul class="services-item-container tab tab-2">
+                        <li class="services-item-header">&#8226 маникюр</li>
+                        <li class="services-item">- классический</li>
+                        <li class="services-item">- комбинированный</li>
+                        <li class="services-item">- европейский</li>
+                        <li class="services-item-header">&#8226 педикюр</li>
+                        <li class="services-item">- аппаратный</li>
+                        <li class="services-item">- классика( обрезной )</li>
+                        <li class="services-item">- кислотный</li>
+                        <li class="services-item-header">&#8226 покрытие гель-лаком разной сложности</li>
+                        <li class="services-item-header">&#8226 дизайны</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="services__section-type cosmetology">
-                <p class="type-name">Косметология</p>
+                <div class="services__section-inner">
+                    <p class="type-name">Косметология</p>
+                    <div class="open-services-list-button tab-btn" data-tab-name="tab-3"><i class="fas fa-chevron-down"></i></div>
+                    <ul class="services-item-container tab tab-3">
+                        <li class="services-item-header">&#8226 профессиональная чистка</li>
+                        <li class="services-item">- комбинированная</li>
+                        <li class="services-item">- ультразвук</li>
+                        <li class="services-item">- детокс - чистка</li>
+                        <li class="services-item-header">&#8226 базовый уход</li>
+                        <li class="services-item">- увлажняющий / омоложение</li>
+                        <li class="services-item">- лифтинг-уход</li>
+                        <li class="services-item-header">&#8226 электропорация</li>
+                        <li class="services-item-header">&#8226 визаж</li>
+                        <li class="services-item-header">&#8226 татуаж</li>
+                        <li class="services-item-header">&#8226 парафинотерапия и прессотерапия</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="services__section-type hair-care">
-                <p class="type-name">Уход за волосами</p>
+                <div class="services__section-inner">
+                    <p class="type-name">Уход за волосами</p>
+                    <div class="open-services-list-button tab-btn" data-tab-name="tab-4"><i class="fas fa-chevron-down"></i></div>
+                    <ul class="services-item-container tab tab-4">
+                        <li class="services-item-header">&#8226 Прически</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="services__section-type body-care">
-                <p class="type-name">Уход за телом</p>
+                <div class="services__section-inner">
+                    <p class="type-name">Уход за телом</p>
+                    <div class="open-services-list-button tab-btn" data-tab-name="tab-5"><i class="fas fa-chevron-down"></i></div>
+                    <ul class="services-item-container tab tab-5">
+                        <li class="services-item-header">&#8226 депиляция всех зон</li>
+                        <li class="services-item-header">&#8226 массаж</li>
+                        <li class="services-item">- классика</li>
+                        <li class="services-item">- антициллюлитный</li>
+                        <li class="services-item">- массаж стоп</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="services__section-type eyebrows-care">
-                <p class="type-name">Архитектура бровей</p>
+                <div class="services__section-inner">
+                    <p class="type-name">Архитектура бровей</p>
+                    <div class="open-services-list-button tab-btn" data-tab-name="tab-6"><i class="fas fa-chevron-down" ></i></div>
+                    <ul class="services-item-container tab tab-6">
+                        <li class="services-item-header">&#8226 наращивание ресниц</li>
+                        <li class="services-item">- классика</li>
+                        <li class="services-item">- 2D, 3D</li>
+                        <li class="services-item-header">&#8226 оформление бровей</li>
+                        <li class="services-item">- моделирование</li>
+                        <li class="services-item">- окрашивание ( хна, краска)</li>
+                    </ul>
+                </div>
             </div>
-
         </div>
 
     </section>
@@ -169,7 +254,7 @@
                     <i class="fab fa-facebook-square"></i>
                 </a>
                 <a href="https://www.instagram.com/tadam_studio_/?hl=ru" target="_blank">
-                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-instagram-square"></i>
                 </a>
             </div>
         </div>

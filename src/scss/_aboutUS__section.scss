@@ -1,27 +1,43 @@
 .aboutUS__section {
   background-color: whitesmoke;
   text-align: center;
+  padding: 10px;
 }
 
 .aboutUS__section.author__block-photo {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   padding: 10px;
   height: 400px;
 }
 .aboutUS__section.description__text{
-  font-size: 12px;
-  padding: 0 20px;
+  font-size: 16px;
+  color: #333;
+  text-align: justify;
 }
 .aboutUS__section.author__block-text{
   font-weight: bold;
   padding-bottom: 20px;
+  color: #333;
+  font-family: 'Lang', cursive;
 }
 .aboutUS__section.description__title{
   font-weight: bold;
-  padding: 10px;
+  padding-top: 10px;
+  font-size: 20px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
-
+& .separate-line {
+  height: 2px;
+  width: 50px;
+  border: none;
+  background-color: rgb(210, 74, 67);
+  display: block;
+  margin: 20px auto;
+  box-shadow: 6px 6px rgb(210, 74, 67);
+}
 @media (min-width: 481px) and (max-width: 992px){
 
   .aboutUS__section {
@@ -35,12 +51,11 @@
     flex-direction: column;
     justify-content: center;
     width: 50%;
-    font-size: 14px;
     letter-spacing: 2px;
   }
   .aboutUS__section.description__text{
-    font-size: 14px;
     padding: 0 20px;
+    font-size: 18px;
   }
   .aboutUS__section.author__block-photo {
     max-width: 300px;
