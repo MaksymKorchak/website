@@ -28,6 +28,7 @@
   color: #333;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  margin-bottom: -10px;
 }
 & .separate-line {
   height: 2px;
@@ -35,8 +36,9 @@
   border: none;
   background-color: rgb(210, 74, 67);
   display: block;
-  margin: 20px auto;
+  margin: 10px auto;
   box-shadow: 6px 6px rgb(210, 74, 67);
+  margin-bottom: 20px;
 }
 @media (min-width: 481px) and (max-width: 992px){
 
